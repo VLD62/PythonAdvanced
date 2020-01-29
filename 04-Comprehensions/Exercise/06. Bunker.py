@@ -14,3 +14,5 @@ if __name__ == "__main__":
                 total_qlty += int(qlty.split(":")[1])
     print(f'Count of items: {total_qty}\nAverage quality: {total_qlty/len(categories_string):.2f}')
     print("\n".join([f"{x['category']} -> {', '.join(x['foods'])}" for x in categories]))
+
+
