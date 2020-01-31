@@ -1,0 +1,15 @@
+##pFlakes8 , coverage, script for empty commit message, commit to be forbidden lower than 80%.
+-   repo: local
+    hooks:
+    -   id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args: [--disable=missing-docstring, --disable=C]
+
+    -   id: pycodestyle
+        name: pycodestyle
+        entry: pycodestyle
+        language: system
+        types: [python]
