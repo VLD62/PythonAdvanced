@@ -1,4 +1,3 @@
-##pFlakes8 , coverage, script for empty commit message, commit to be forbidden lower than 80%.
 -   repo: local
     hooks:
     -   id: pylint
