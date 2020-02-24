@@ -5,10 +5,5 @@
         entry: pylint
         language: system
         types: [python]
-        args: [--disable=missing-docstring, --disable=C]
+        args: [--disable=missing-docstring, --disable=C, --disable=W, --disable=R]
 
-    -   id: pycodestyle
-        name: pycodestyle
-        entry: pycodestyle
-        language: system
-        types: [python]

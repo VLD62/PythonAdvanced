@@ -3,9 +3,9 @@ class IsNotNumberStringError(Exception):
 
 
 numbers_dictionary = {}
-line = input()
-while line != "Search":
-    number_as_string = line
+LINE = input()
+while LINE != "Search":
+    number_as_string = LINE
     try:
         if number_as_string.isdigit():
             raise IsNotNumberStringError("Input must not be a digit")
@@ -16,28 +16,28 @@ while line != "Search":
     except IsNotNumberStringError as error:
         print(error)
     finally:
-        line = input()
+        LINE = input()
 
-line = input()
+LINE = input()
 
-while line != "Remove":
-    searched = line
+while LINE != "Remove":
+    searched = LINE
     try:
         print(numbers_dictionary[searched])
     except KeyError:
         print("Number does not exist in dictionary")
     finally:
-        line = input()
+        LINE = input()
 
-line = input()
+LINE = input()
 
-while line != "End":
-    searched = line
+while LINE != "End":
+    searched = LINE
     try:
         del numbers_dictionary[searched]
     except KeyError:
         print("Number does not exist in dictionary")
     finally:
-        line = input()
+        LINE = input()
 
 print(numbers_dictionary)
